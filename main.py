@@ -45,14 +45,14 @@ while(doAgain == "y"):
         raise Exception("Enter either USD or EUR")
 
 
-    satoshiPriceUserInput = int(input("How many Satoshi is each coin worth: "))
+    satoshiPriceUserInput = int(input("How much is each coin worth in Satoshi: "))
     satoshiAmountUserInput = int(input("How many coins do you have: "))
 
-    calculatedAmount = satoshiAmountUserInput * satoshiUSD
 
-    print(calculatedAmount*satoshiAmountUserInput)
+    finalSatoshi = satoshiPriceUserInput * usd_rate/100000000
+    calculatedAmount = format(satoshiAmountUserInput * finalSatoshi, '.2f')
+
+    print(calculatedAmount)
 
     print("Do you want to convert again? (y/n)")
     doAgain = input()
-
-    
