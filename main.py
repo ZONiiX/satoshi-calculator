@@ -48,12 +48,11 @@ while(doAgain == "y"):
     satoshiPriceUserInput = int(input("How many Satoshi is each coin worth: "))
     satoshiAmountUserInput = int(input("How many coins do you have: "))
 
+    calculatedAmount = satoshiAmountUserInput * satoshiUSD
 
-
-
-    print(satoshiPriceUserInput*satoshiAmountUserInput)
+    print(calculatedAmount*satoshiAmountUserInput)
 
     print("Do you want to convert again? (y/n)")
+    doAgain = input()
+
     
-    if doAgain == "n":
-        sys.exit()
