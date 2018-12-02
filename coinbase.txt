@@ -1,0 +1,5 @@
+secret key:
+ZPI7D1OCNO1x0uEok8Qw3pu0SBx3FEZF
+
+api key:
+bBPCuJ7BSACofOKU
